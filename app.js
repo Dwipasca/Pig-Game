@@ -5,14 +5,14 @@ let scores,
   lastDice,
   gamePlaying = true;
 init();
-document.querySelector(".btn-roll").addEventListener("click", function() {
+document.querySelector(".btn-roll").addEventListener("click", function () {
   if (gamePlaying) {
     //random number
     let dice = Math.floor(Math.random() * 6) + 1;
     //display the result
     let domDice = document.querySelector(".dice");
     domDice.style.display = "block";
-    domDice.src = "dice-" + dice + ".png";
+    domDice.src = "./Images/dice-" + dice + ".png";
     //update the round score if the roll number was not a 1
     if (dice === 6 && lastDice === 6) {
       scores[activePlayer] = 0;
@@ -20,16 +20,15 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
       nextPlayer();
     } else if (dice !== 1) {
       roundScore = roundScore + dice;
-      document.querySelector(
-        "#current-" + activePlayer
-      ).textContent = roundScore;
+      document.querySelector("#current-" + activePlayer).textContent =
+        roundScore;
     } else {
       nextPlayer();
     }
     lastDice = dice;
   }
 });
-document.querySelector(".btn-hold").addEventListener("click", function() {
+document.querySelector(".btn-hold").addEventListener("click", function () {
   if (gamePlaying) {
     //add curent score to global score
     scores[activePlayer] += roundScore;
@@ -84,7 +83,7 @@ function init() {
   document.querySelector(".player-0-panel").classList.add("active");
 }
 
-let power = function(base, exponent) {
+let power = function (base, exponent) {
   if (exponent == undefined) exponent = 2;
   var result = 1;
   for (var count = 0; count < exponent; count++) {
