@@ -4,8 +4,9 @@ Pig game is a simple web game, when you can play with your friends.
 
 ### Screenshoot
 
-![alt text](https://github.com/Dwipasca/Pig-Game/blob/assets/screenshoot/image1.png?raw=true)
-![alt text](https://github.com/Dwipasca/Pig-Game/blob/assets/screenshoot/image2.png?raw=true)
+<img width="1280" alt="Screen Shot 2022-06-26 at 17 37 08" src="https://user-images.githubusercontent.com/19584291/175811996-f278fe3f-34ca-4eae-8ff9-1a1e7df57e6b.png">
+<img width="1280" alt="Screen Shot 2022-06-26 at 17 37 43" src="https://user-images.githubusercontent.com/19584291/175812083-754d0590-d406-4a53-b8a4-1f45117ea971.png">
+
 
 ### Rules
 
